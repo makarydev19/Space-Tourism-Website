@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="index.css" />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="./assets/favicon-32x32.png" />
+      <!-- Google fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+        rel="stylesheet" />
+
+      <title>Frontend Mentor | Space tourism website</title>
+      <script src="navigation.js" defer></script>
+      <script src="tabs.js" defer></script>
+    </head>
+    <body class="tech">
+      <a class="skip-to-content" href="#main">Skip to content</a>
+      <header class="primary-header flex">
+        <div>
+          <img
+            src="./assets/shared/logo.svg"
+            alt="space tourism logo"
+            class="logo" />
+        </div>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+          <span class="sr-only" aria-expanded="false">Menu</span>
+        </button>
+        <nav>
+          <ul
+            id="primary-navigation"
+            data-visible="false"
+            class="primary-navigation underline-indicators flex">
+            <li>
+              <a
+                class="ff-sans-cond uppercase text-white letter-spacing-2"
+                href="home.html"
+                ><span aria-hidden="true">00</span>Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="ff-sans-cond uppercase text-white letter-spacing-2"
+                href="destination-moon.html"
+                ><span aria-hidden="true">01</span>Destination</a
+              >
+            </li>
+            <li>
+              <a
+                class="ff-sans-cond uppercase text-white letter-spacing-2"
+                href="crew-commander.html"
+                ><span aria-hidden="true">02</span>Crew</a
+              >
+            </li>
+            <li class="active">
+              <a
+                class="ff-sans-cond uppercase text-white letter-spacing-2"
+                href="technology-vehicle.html"
+                ><span aria-hidden="true">03</span>Technology</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main
+        id="main"
+        class="grid-container--technology grid-container--tech flow">
+        <h1 class="numbered-title left-space">
+          <span aria-hidden="true">03</span> Space launch 101
+        </h1>
+
+        <!-- Numbers -->
+        <div class="numbers-indicators flow-space--small" role="tablist">
+          <div class="row">
+            <button aria-selected="true" role="tab">
+              <span> 1 </span>
+            </button>
+            <a href="technology-spaceport.html">
+              <button aria-selected="false" role="tab">
+                <span> 2 </span>
+              </button></a
+            >
+            <a href="technology-capsule.html">
+              <button aria-selected="false" role="tab">
+                <span> 3 </span>
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="tech-details flow-space--small">
+          <article class="flow flow-space--small left-space-large">
+            <header class="flow flow-space--small">
+              <h2 class="fs-400 ff-serif uppercase">The terminology...</h2>
+              <p class="fs-700 uppercase ff-sans-cond">Launch vehicle</p>
+            </header>
+            <p>
+              A launch vehicle or carrier rocket is a rocket-propelled vehicle
+              used to carry a payload from Earth's surface to space, usually to
+              Earth orbit or beyond. Our WEB-X carrier rocket is the most
+              powerful in operation. Standing 150 metres tall, it's quite an
+              awe-inspiring sight on the launch pad!
+            </p>
+          </article>
+        </div>
+
+        <picture>
+          <div class="mob-tab-img">
+            <img
+              src="assets/technology/image-launch-vehicle-landscape.jpg"
+              alt="launch Vehicle" />
+          </div>
+          <div class="lap-img">
+            <img
+              src="assets/technology/image-launch-vehicle-portrait.jpg"
+              alt="launch Vehicle" />
+          </div>
+        </picture>
+      </main>
+    </body>
+  </html>
+</html>
